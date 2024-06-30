@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Communes{% endblock %}
+
+{% block body %}
+
+<section class="info">
+    <div class="title mt-5">
+       {% for key, datas in data %}
+            <ul>
+                <li>
+                {{ key }} : {{ datas.nom }}
+                </li>
+            </ul>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

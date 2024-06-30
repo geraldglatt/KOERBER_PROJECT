@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page_Custumer_name{% endblock %}
+
+{% block body %}
+
+<section class="info">
+    <div class="title mt-5">
+        <h1>{{ data.info.title }}</h1>
+    </div>
+    <div class="mt-5">
+        <p class="text-left"> {{ data.info.description }}</p>
+    </div>
+    <div class="example-wrapper mt-5">
+        <p> {{ data.info.contact.name}}</p>
+    </div>
+    <div class="example-wrapper mt-5">
+        <p> {{ data.info.contact.email}}</p>
+    </div>
+</section>
+<section class="tags">
+    <div class="title mt-5">
+        <ul>
+            <li>{{ data.tags[0].name}}</li>
+            <li>{{ data.tags[1].name}}</li>
+            <li>{{ data.tags[2].name}}</li>
+            <li>{{ data.tags[3].name}}</li>
+            <li>{{ data.tags[4].name}}</li>
+            <li>{{ data.tags[5].name}}</li>
+            <li>{{ data.tags[6].name}}</li>
+            <li>{{ data.tags[7].name}}</li>
+            <li>{{ data.tags[8].name}}</li>
+            <li>{{ data.tags[9].name}}</li>
+            <li>{{ data.tags[10].name}}</li>
+            <li>{{ data.tags[11].name}}</li>
+            <li>{{ data.tags[12].name}}</li>
+            <li>{{ data.tags[13].name}}</li>
+            <li>{{ data.tags[14].name}}</li>
+        </ul>
+        <h1>{{ data.tags[0].name}}</h1>
+    </div>
+</section>
+{% endblock %}
